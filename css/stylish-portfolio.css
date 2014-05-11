@@ -293,7 +293,7 @@ i.serviced {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/DeathtoStock_Wired2.jpg) no-repeat center center fixed; 
+  background: url(../img/DeathtoStock_Wired4.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -328,6 +328,10 @@ https://farm9.staticflickr.com/8525/8673416351_1a1fde1f7d_o.jpg**/
 
 .call-to-action .btn {
   margin: 10px;
+}
+
+#modal {
+  display: none;
 }
 
 /* Map */

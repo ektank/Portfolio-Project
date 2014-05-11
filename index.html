@@ -15,6 +15,10 @@
     <!-- Add custom CSS here -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.custombox.css">
+
+
+    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo+2:200' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'/>
@@ -32,7 +36,7 @@
     <div id="top" class="header">
         <div class="v-text" id="shead">
                 <h1>Emily KT Riggs</h1>
-                <h3>Junior Web Developer</h3>
+                <h3>Front-End Web Developer</h3>
                 <a href="#about"><i class="fa fa-arrow-circle-down scroll fa-4x"></i></a>
         </div>
     </div>
@@ -75,11 +79,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Developing</h2>
+                    <h2>Developer</h2>
                     <hr>
                 </div>
                 <div class="col-md-7 col-md-offset-1 text-justify">
-                    <p class="lead">Emily KT Riggs is awesome (though she is dying to be called Emily Tankersley right now). She is obsessed with ancient Roman history, trying to capture pretty images with her camera, and experiencing as much of the world as she possibly can. Previously a teacher, she has decided to head in a new direction: coding. </p><p class="lead">She recently finished up a three month Front-End Web Development course with <a href="http://www.thinkful.com" target="_blank">Thinkful</a>, a revolutionary mentor-led coding program, and is excited to be building a foundation of necessary development skills. She is going to marry an awesome sexy doctor and, although this shit is difficult and will require lots of work and patience, she will hopefully someday be a badass web developer. </p>
+                    <p class="lead">Emily KT Riggs is awesome (though she is dying to be called Emily Tankersley right now). She is obsessed with ancient Roman history, trying to capture pretty images with her camera, and experiencing as much of the world as she possibly can. Previously a teacher, she has decided to head in a new direction: coding. </p><p class="lead">She recently finished up a three month Front-End Web Development course with <a href="http://www.thinkful.com" target="_blank">Thinkful</a>, a revolutionary mentor-led coding program, and is excited to be building a foundation of necessary development skills. Blah blah blah.<!-- She is going to marry an awesome sexy doctor and, although this shit is difficult and will require lots of work and patience, she will hopefully someday be a badass web developer.--> </p>
                     <p class="lead overthere">Stay tuned, portfolio.</p>
                     <p class="lead overthere"><a href="#" class="btn btn-lg btn-default">Resume</a></p>
                 </div>
@@ -108,28 +112,28 @@
                         <h4>Coding Things</h4>
 <!-- TESTING TESTING -->
             
-                        <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+                        <p>Do you need someone to code up a super sweet website for you? A combo of HTML/CSS, jQuery, JavaScript, AJAX, Bootstrap and SASS should take care of that.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="glyphicon glyphicon-globe serviced"></i>
                         <h4>World Traveling</h4>
-                        <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+                        <p>Ever wondered what it's like to live in Asia, the Middle East or Europe? Emily could tell you a thing or two about these places.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="fa fa-camera-retro fa-3x serviced"></i>
                         <h4>Photo Taking</h4>
-                        <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+                        <p>Constantly trying to paint a picture through a lens, Emily's favorite travel companion is none other than her big ole Canon 450D.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="glyphicon glyphicon-pencil serviced"></i>
                         <h4>Stuff Writing</h4>
-                        <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+                        <p>As you can see, Emily is full of the stuff-writing. She is writing this right now, and could probably write even more, if she needed to.</p>
                     </div>
                 </div>
             </div><!--
@@ -239,12 +243,22 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h3>The button below will soon lead to awesome things.</h3>
-                        <a class="what btn btn-lg btn-default" href="#call-to-action">Contact</a>
+                        <a class="what btn btn-lg btn-default" href="#modal" id="contact">Contact</a>
 
+    <div id="modal" class="modal-example-content">
+        <div class="modal-example-header">
+            <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+            <h4>jQuery Custombox</h4>
+        </div>
+        <div class="modal-example-body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+<!--
             <div class="overlay" id="modal">
                 <div class="content">
                     <div class="col-md-12 col-md-offset-2 text-center">
-                    <h1>Get in Touch</h1>
+                    <h1>Get in Touch.</h1>
                     <h3>The button below will soon lead to awesome things.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi voluptatibus nisi voluptas est quos porro inventore dolor enim.</p>
                         <div class="input-group margin-bottom-sm">
@@ -256,7 +270,7 @@
                     </div>
                 </div>
             </div>
-
+-->
                 </div>
             </div>
         </div>
@@ -301,6 +315,7 @@
     
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.custombox.js"></script>
 
     <!-- Waypoint-sticky.js 
     <script src="waypoints-sticky.min.js"></script>

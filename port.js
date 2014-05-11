@@ -34,6 +34,12 @@
         });
     });
 
+$(function () {
+    $('#contact').on('click', function ( e ) {
+        $.fn.custombox( this );
+        e.preventDefault();
+    });
+});
 
 
 $(document).ready(function() {
