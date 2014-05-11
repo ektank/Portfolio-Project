@@ -9,12 +9,50 @@ body {
 
 @font-face { font-family: Jura Regular; src: url('Jura-Regular.ttf'); } 
 
+/** Testing **/
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  line-height: 108px;
+  height: 108px;
+  background: #335C7D;
+  color: #000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sticky {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  background: #efc47D;
+  text-align: left;
+  padding-left: 20px;
+}
+
 a {
   color: #3F7D9E;
 }
 
 a:hover {
   color: #3F7D9E;
+}
+
+
+.v-text {
+  width: 35%;
+  margin-left: 35px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.v-text h1 {
+  padding: 40;
+  font-size: 4.5em;
+  font-weight: 700;
+  color: #fff;
 }
 
 .vert-text {
@@ -25,7 +63,8 @@ a:hover {
 
 .vert-text h1 {
   padding: 40;
-  margin-top: 420px;
+  margin-top: 0;
+  margin-left: 0;
   font-size: 4.5em;
   font-weight: 700;
   color: #fff;
@@ -36,6 +75,7 @@ a:hover {
   margin-top: 0;
   font-size: 4.5em;
   font-weight: 700;
+  text-align: center;
 }
 
 .sticky-wrapper {
@@ -165,7 +205,7 @@ a:hover {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url("../img/DeathtoStock_Wired2.jpg") no-repeat center center fixed; 
+  background: url("../img/unsplash_52b6b4db7397c_1.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -219,12 +259,15 @@ i.serviced {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/callout.jpg) no-repeat center center fixed; 
+  background: url(../img/DeathtoStock_Wired2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+/** ../img/callout.jpg 
+https://farm9.staticflickr.com/8525/8673416351_1a1fde1f7d_o.jpg**/
 
 /* Portfolio */
 

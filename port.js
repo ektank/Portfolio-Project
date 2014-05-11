@@ -4,7 +4,18 @@
 
     // Custom JavaScript for the Side Menu and Smooth Scrolling
     
-    // Game explanation display
+    /** Sticky test **/
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){
+        $('header').addClass("sticky");
+    }
+    else {
+        $('header').removeClass("sticky");
+    }
+});
+
+
+    // Contact display
     $(".what").click(function(){
         $(".overlay").fadeIn(1200);
     });
