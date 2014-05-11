@@ -23,7 +23,6 @@ header {
   padding: 0;
   position: fixed;
   width: 100%;
-  text-align: left;
   color: #000;
   z-index: -999;
 }
@@ -38,19 +37,31 @@ header.sticky {
 }
 
 #sticky-name {
+  font-family: 'Roboto', arial;
+  font-size: 0.6em;
+  text-transform: uppercase;
   display: inline-block;
   left: 0;
   color: #fff;
   padding: 5px;
 }
 
+#sticky-name a {
+  color: #fff;
+  padding-right: 10px;
+}
+
 #sticky-links {
+  font-family: 'Roboto', arial;
+  font-size: 0.6em;
   display: inline-block;
   right: 0;
+  padding-bottom: 5px;
 }
 
 #sticky-links a {
   color: #fff;
+  padding: 10px;
 }
 
 a {

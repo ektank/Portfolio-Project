@@ -1,10 +1,4 @@
 
-    //$('.nav').waypoint('sticky');
-
-
-    // Custom JavaScript for the Side Menu and Smooth Scrolling
-
-
     // Contact display
     $(".what").click(function(){
         $(".overlay").fadeIn(1200);
@@ -40,19 +34,24 @@
         });
     });
 
-    /** Sticky test **/
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('header').addClass("sticky");
-    }
-    else {
-        $('header').removeClass("sticky");
-    }
-});
 
-//$(window).load(function(){
-   // $("#top").
-//})
-//$(window).load(function(){
-    //$(".is-sticky").sticky({ topSpacing: 0 });
-//});
+
+$(document).ready(function() {
+    var stickyNavTop = $('header').offset().top;
+  
+    var stickyNav = function(){
+    var scrollTop = $(window).scrollTop();
+           
+        if (scrollTop > stickyNavTop) {
+            $('header').addClass('sticky');
+        } else {
+            $('header').removeClass('sticky');
+        }
+    };
+  
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
