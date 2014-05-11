@@ -42,7 +42,6 @@
 
     /** Sticky test **/
 $(window).scroll(function() {
-    var topMove = $("#about").position();
     if ($(this).scrollTop() > 1){
         $('header').addClass("sticky");
     }
@@ -50,7 +49,10 @@ $(window).scroll(function() {
         $('header').removeClass("sticky");
     }
 });
-    
+
+//$(window).load(function(){
+   // $("#top").
+//})
 //$(window).load(function(){
     //$(".is-sticky").sticky({ topSpacing: 0 });
 //});
