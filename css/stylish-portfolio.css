@@ -4,7 +4,10 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Exo 2', 'Montserrat';
 }
+
+@font-face { font-family: Jura Regular; src: url('Jura-Regular.ttf'); } 
 
 a {
   color: #3F7D9E;
@@ -282,8 +285,9 @@ i.scroll:hover {
 
 @media (max-width: 768px) {
 	
-  .header {
-	background: url(../img/DeathtoStock_Wired2.jpg) no-repeat center center scroll; 
+  .header {/**
+	background: url(../img/DeathtoStock_Wired2.jpg) no-repeat center center scroll; **/
+  background-color: #000;
   }
 
   .callout {
@@ -318,4 +322,92 @@ i.scroll:hover {
 
 .btn-custom:hover {
   color: #fff;
+}
+
+/** Content **/
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background: #fff;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  margin: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.content {
+  background-color: #fff;
+}
+
+.content {
+  color: #000;
+  background: #fff;
+  position: relative;
+  height: 270%;
+  width: 100%;
+  border-radius: 3px;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.content h1 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0.8;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px 3px 0 0;
+}
+
+.content > div {
+  padding: 15px 40px 30px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+
+.content > div p {
+  margin: 0;
+  padding: 10px 10px;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.content > div ul {
+  margin-bottom: -30px;
+  padding: 0 0 30px 20px;
+  text-align: left;
+}
+
+.content > div ul li {
+  padding: 5px 0;
+  display: block; 
+  list-style-type: disc;
+  line-height: 1.5em;
+}
+
+.content > div ul li strong{
+  text-decoration: underline;
+}
+
+.content > div a {
+  font-size: 0.8em;
+  background: #1F253D;
+  color: #95a5a6;
+  padding: 0.5em 2em;
+  margin-bottom: 50px;
+  border-radius: 3px;
+}
+
+.closebtn {
+  text-align: center;
 }

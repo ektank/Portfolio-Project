@@ -4,6 +4,13 @@
 
     // Custom JavaScript for the Side Menu and Smooth Scrolling
     
+    // Game explanation display
+    $(".what").click(function(){
+        $(".overlay").fadeIn(1200);
+    });
+    $("a.close").click(function(){
+        $(".overlay").fadeOut(1000);
+    });
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
