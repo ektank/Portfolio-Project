@@ -1,4 +1,12 @@
 /* Global Styles */
+* {
+  margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
 
 html,
 body {
@@ -11,25 +19,38 @@ body {
 
 /** Testing **/
 header {
+  margin: 0;
+  padding: 0;
   position: fixed;
   width: 100%;
-  text-align: center;
-  font-size: 72px;
-  line-height: 108px;
-  height: 108px;
-  background: #335C7D;
+  text-align: left;
   color: #000;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  z-index: -999;
 }
 
-.sticky {
-  font-size: 24px;
-  line-height: 48px;
-  height: 48px;
-  background: #efc47D;
+header.sticky {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 10px;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 2em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 997;
+}
+
+#sticky-name {
+  display: inline-block;
+  color: #fff;
+  padding: 5px;
+}
+
+#sticky-links {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#sticky-links a {
+  color: #fff;
 }
 
 a {
@@ -40,19 +61,20 @@ a:hover {
   color: #3F7D9E;
 }
 
-
 .v-text {
   width: 35%;
-  margin-left: 35px;
-  margin-top: 50px;
+  margin-left: 30px;
+  margin-top: 45px;
   text-align: center;
+  z-index: 999;
 }
 
 .v-text h1 {
-  padding: 40;
+  padding: 0;
   font-size: 4.5em;
   font-weight: 700;
   color: #fff;
+  z-index: 998;
 }
 
 .vert-text {
@@ -218,6 +240,7 @@ a:hover {
 
 .intro {
   padding: 50px 0;
+  z-index: 1;
 }
 
 .scroll:hover {

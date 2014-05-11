@@ -3,16 +3,6 @@
 
 
     // Custom JavaScript for the Side Menu and Smooth Scrolling
-    
-    /** Sticky test **/
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('header').addClass("sticky");
-    }
-    else {
-        $('header').removeClass("sticky");
-    }
-});
 
 
     // Contact display
@@ -34,8 +24,7 @@ $(window).scroll(function() {
         $("#sidebar-wrapper").toggleClass("active");
     });
     
-
-    $(function() {
+        $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
@@ -50,6 +39,17 @@ $(window).scroll(function() {
             }
         });
     });
+
+    /** Sticky test **/
+$(window).scroll(function() {
+    var topMove = $("#about").position();
+    if ($(this).scrollTop() > 1){
+        $('header').addClass("sticky");
+    }
+    else {
+        $('header').removeClass("sticky");
+    }
+});
     
 //$(window).load(function(){
     //$(".is-sticky").sticky({ topSpacing: 0 });
